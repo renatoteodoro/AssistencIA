@@ -656,11 +656,11 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 ### 🏦 Sprint 4 — Contas Bancárias
 
 #### Tarefa 4.1 — Model de conta (`accounts`)
-- [ ] 4.1.1 — Criar `Account` em `accounts/models.py` com campos: `user` (FK), `name`, `account_type` (choices), `initial_balance` (DecimalField).
-- [ ] 4.1.2 — Definir choices de tipo: `checking` (Corrente), `savings` (Poupança), `wallet` (Carteira).
-- [ ] 4.1.3 — Adicionar campos `created_at` e `updated_at`.
-- [ ] 4.1.4 — Registrar no `accounts/admin.py`.
-- [ ] 4.1.5 — Executar `makemigrations accounts` e `migrate`.
+- [X] 4.1.1 — Criar `Account` em `accounts/models.py` com campos: `user` (FK), `name`, `account_type` (choices), `initial_balance` (DecimalField).
+- [X] 4.1.2 — Definir choices de tipo: `checking` (Corrente), `savings` (Poupança), `wallet` (Carteira).
+- [X] 4.1.3 — Adicionar campos `created_at` e `updated_at`.
+- [X] 4.1.4 — Registrar no `accounts/admin.py`.
+- [X] 4.1.5 — Executar `makemigrations accounts` e `migrate`.
 
 #### Tarefa 4.2 — Forms de conta
 - [ ] 4.2.1 — Criar `accounts/forms.py`.

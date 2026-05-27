@@ -1,3 +1,4 @@
 - [Sprint 1 — Users App](project-sprint1-users.md) — CustomUser (email auth), forms, views, URLs, migrations applied; superuser admin@assistencia.com created
 - [Sprint 2 — Profiles App](project-sprint2-profiles.md) — Profile model (OneToOneField), post_save signal with dispatch_uid, admin, migration applied; .flake8 config created
 - [Sprint 3 — Dashboard View](project-sprint3-dashboard.md) — DashboardView in core/views.py; try/except ImportError guards for Account+Transaction until Sprint 4/5
+- [Sprint 4.1 — Accounts Model](project-sprint4-accounts-model.md) — Account model (checking/savings/wallet choices), admin, migration 0001_initial applied
