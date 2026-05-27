@@ -626,12 +626,12 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 ### 🌐 Sprint 3 — Página Pública e Dashboard
 
 #### Tarefa 3.1 — Página pública (`core`)
-- [ ] 3.1.1 — Criar `core/views.py` com `HomeView` (TemplateView) para a landing page.
-- [ ] 3.1.2 — Criar `templates/public/home.html` com apresentação do produto.
-- [ ] 3.1.3 — Incluir botões "Cadastre-se" e "Entrar" no hero da página.
-- [ ] 3.1.4 — Aplicar gradiente de destaque no hero (`from-indigo-500 via-purple-600 to-cyan-500`).
-- [ ] 3.1.5 — Garantir que a página seja acessível sem autenticação.
-- [ ] 3.1.6 — Configurar rota `''` (home) em `core/urls.py` apontando para `HomeView`.
+- [X] 3.1.1 — Criar `core/views.py` com `HomeView` (TemplateView) para a landing page.
+- [X] 3.1.2 — Criar `templates/public/home.html` com apresentação do produto.
+- [X] 3.1.3 — Incluir botões "Cadastre-se" e "Entrar" no hero da página.
+- [X] 3.1.4 — Aplicar gradiente de destaque no hero (`from-indigo-500 via-purple-600 to-cyan-500`).
+- [X] 3.1.5 — Garantir que a página seja acessível sem autenticação.
+- [X] 3.1.6 — Configurar rota `''` (home) em `core/urls.py` apontando para `HomeView`.
 
 #### Tarefa 3.2 — Layout autenticado base
 - [ ] 3.2.1 — Criar `templates/layouts/app.html` com sidebar lateral e área de conteúdo.
