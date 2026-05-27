@@ -653,7 +653,7 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 
 ---
 
-### 🏦 Sprint 4 — Contas Bancárias
+### ✅ Sprint 4 — Contas Bancárias
 
 #### Tarefa 4.1 — Model de conta (`accounts`)
 - [X] 4.1.1 — Criar `Account` em `accounts/models.py` com campos: `user` (FK), `name`, `account_type` (choices), `initial_balance` (DecimalField).
@@ -668,21 +668,21 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 4.2.3 — Aplicar classes Tailwind nos widgets do formulário.
 
 #### Tarefa 4.3 — Views de conta
-- [ ] 4.3.1 — Criar `AccountListView` (LoginRequiredMixin + ListView) filtrando por `user=request.user`.
-- [ ] 4.3.2 — Criar `AccountCreateView` (LoginRequiredMixin + CreateView) atribuindo `user` no `form_valid`.
-- [ ] 4.3.3 — Criar `AccountUpdateView` (LoginRequiredMixin + UpdateView) verificando ownership.
-- [ ] 4.3.4 — Criar `AccountDeleteView` (LoginRequiredMixin + DeleteView) com verificação de transações vinculadas e ownership.
+- [X] 4.3.1 — Criar `AccountListView` (LoginRequiredMixin + ListView) filtrando por `user=request.user`.
+- [X] 4.3.2 — Criar `AccountCreateView` (LoginRequiredMixin + CreateView) atribuindo `user` no `form_valid`.
+- [X] 4.3.3 — Criar `AccountUpdateView` (LoginRequiredMixin + UpdateView) verificando ownership.
+- [X] 4.3.4 — Criar `AccountDeleteView` (LoginRequiredMixin + DeleteView) com verificação de transações vinculadas e ownership.
 
 #### Tarefa 4.4 — URLs de conta
-- [ ] 4.4.1 — Criar `accounts/urls.py` com rotas: `list/`, `new/`, `<pk>/edit/`, `<pk>/delete/`.
-- [ ] 4.4.2 — Incluir `accounts.urls` no `core/urls.py` com prefixo `accounts/`.
+- [X] 4.4.1 — Criar `accounts/urls.py` com rotas: `list/`, `new/`, `<pk>/edit/`, `<pk>/delete/`.
+- [X] 4.4.2 — Incluir `accounts.urls` no `core/urls.py` com prefixo `accounts/`.
 
 #### Tarefa 4.5 — Templates de conta
-- [ ] 4.5.1 — Criar `templates/accounts/account_list.html` com tabela de contas e botões de ação.
-- [ ] 4.5.2 — Criar `templates/accounts/account_form.html` com formulário de criação/edição.
-- [ ] 4.5.3 — Criar `templates/accounts/account_confirm_delete.html` com confirmação de exclusão.
-- [ ] 4.5.4 — Aplicar design system em todos os templates.
-- [ ] 4.5.5 — Exibir mensagem de bloqueio quando a exclusão não for permitida.
+- [X] 4.5.1 — Criar `templates/accounts/account_list.html` com tabela de contas e botões de ação.
+- [X] 4.5.2 — Criar `templates/accounts/account_form.html` com formulário de criação/edição.
+- [X] 4.5.3 — Criar `templates/accounts/account_confirm_delete.html` com confirmação de exclusão.
+- [X] 4.5.4 — Aplicar design system em todos os templates.
+- [X] 4.5.5 — Exibir mensagem de bloqueio quando a exclusão não for permitida.
 
 ---
 

@@ -27,3 +27,15 @@ Fields in order:
 All widgets already carry Tailwind classes from `_FIELD_CLASSES`. Templates render each field directly by name.
 
 **How to apply:** When rendering auth forms field-by-field in templates, use these exact field names. No need to add CSS classes to inputs — the form widgets supply them.
+
+## AccountForm (accounts/forms.py — ModelForm)
+
+Model: `accounts.Account`
+
+Fields in order:
+- `name` — TextInput with `_INPUT_CLASSES`
+- `account_type` — Select with `_SELECT_CLASSES`, choices: `checking/Corrente`, `savings/Poupança`, `wallet/Carteira`
+- `initial_balance` — NumberInput with `_INPUT_CLASSES`, DecimalField (max_digits=12, decimal_places=2)
+
+All widgets carry Tailwind classes. Templates render each field by name using `{{ form.name }}` etc.
+`account.get_account_type_display` returns the human-readable label in the list view.

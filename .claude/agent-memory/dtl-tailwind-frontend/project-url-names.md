@@ -15,7 +15,10 @@ URL names confirmed from urls.py files:
 - `logout` — LogoutView, path `users/logout/`
 
 **Namespaced apps (Sprint 3+ task spec defines these):**
-- `accounts:account_list` — namespace `accounts`, app `accounts`
+- `accounts:account_list` — namespace `accounts`, confirmed in accounts/urls.py
+- `accounts:account_create` — path `accounts/new/`
+- `accounts:account_update` — path `accounts/<int:pk>/edit/`
+- `accounts:account_delete` — path `accounts/<int:pk>/delete/`
 - `categories:category_list` — namespace `categories`, app `categories`
 - `transactions:transaction_list` — namespace `transactions`, app `transactions`
 - `users:logout` — confirmed in use: `app.html` (layouts) uses this form, so `app_name = 'users'` is set in users/urls.py
