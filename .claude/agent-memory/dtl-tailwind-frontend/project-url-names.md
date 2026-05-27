@@ -18,7 +18,7 @@ URL names confirmed from urls.py files:
 - `accounts:account_list` — namespace `accounts`, app `accounts`
 - `categories:category_list` — namespace `categories`, app `categories`
 - `transactions:transaction_list` — namespace `transactions`, app `transactions`
-- `users:logout` — task spec uses this form; verify against users/urls.py `app_name` before relying on it
+- `users:logout` — confirmed in use: `app.html` (layouts) uses this form, so `app_name = 'users'` is set in users/urls.py
 
 **Active state detection in sidebar:**
 - Dashboard: `request.resolver_match.url_name == 'dashboard'`

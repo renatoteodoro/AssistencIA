@@ -623,7 +623,7 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 
 ---
 
-### 🌐 Sprint 3 — Página Pública e Dashboard
+### ✅ Sprint 3 — Página Pública e Dashboard
 
 #### Tarefa 3.1 — Página pública (`core`)
 - [X] 3.1.1 — Criar `core/views.py` com `HomeView` (TemplateView) para a landing page.
@@ -641,15 +641,15 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 3.2.5 — Aplicar design system ao layout (cores slate, bordas, tipografia).
 
 #### Tarefa 3.3 — Dashboard (`core`)
-- [ ] 3.3.1 — Criar `DashboardView` (LoginRequiredMixin + TemplateView) em `core/views.py`.
-- [ ] 3.3.2 — Calcular no contexto: saldo total de todas as contas do usuário.
-- [ ] 3.3.3 — Calcular no contexto: total de receitas do mês corrente.
-- [ ] 3.3.4 — Calcular no contexto: total de despesas do mês corrente.
-- [ ] 3.3.5 — Buscar as últimas 5 transações do usuário para exibição.
-- [ ] 3.3.6 — Criar `templates/dashboard/index.html` estendendo `layouts/app.html`.
-- [ ] 3.3.7 — Implementar 3 cards de resumo (saldo, receitas, despesas) com cores do design system.
-- [ ] 3.3.8 — Implementar tabela/lista das últimas 5 transações no dashboard.
-- [ ] 3.3.9 — Configurar rota `dashboard/` em `core/urls.py`.
+- [X] 3.3.1 — Criar `DashboardView` (LoginRequiredMixin + TemplateView) em `core/views.py`.
+- [X] 3.3.2 — Calcular no contexto: saldo total de todas as contas do usuário.
+- [X] 3.3.3 — Calcular no contexto: total de receitas do mês corrente.
+- [X] 3.3.4 — Calcular no contexto: total de despesas do mês corrente.
+- [X] 3.3.5 — Buscar as últimas 5 transações do usuário para exibição.
+- [X] 3.3.6 — Criar `templates/dashboard/index.html` estendendo `layouts/app.html`.
+- [X] 3.3.7 — Implementar 3 cards de resumo (saldo, receitas, despesas) com cores do design system.
+- [X] 3.3.8 — Implementar tabela/lista das últimas 5 transações no dashboard.
+- [X] 3.3.9 — Configurar rota `dashboard/` em `core/urls.py`.
 
 ---
 
