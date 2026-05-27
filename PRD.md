@@ -556,11 +556,11 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 0.3.5 — Configurar `STATICFILES_DIRS` em `settings.py`.
 
 #### Tarefa 0.4 — Configuração global do settings.py
-- [ ] 0.4.1 — Definir `LANGUAGE_CODE = 'pt-br'`.
-- [ ] 0.4.2 — Definir `TIME_ZONE = 'America/Sao_Paulo'`.
-- [ ] 0.4.3 — Definir `USE_I18N = True` e `USE_TZ = True`.
-- [ ] 0.4.4 — Confirmar `DATABASES` apontando para `db.sqlite3`.
-- [ ] 0.4.5 — Definir `LOGIN_URL`, `LOGIN_REDIRECT_URL` e `LOGOUT_REDIRECT_URL`.
+- [X] 0.4.1 — Definir `LANGUAGE_CODE = 'pt-br'`.
+- [X] 0.4.2 — Definir `TIME_ZONE = 'America/Sao_Paulo'`.
+- [X] 0.4.3 — Definir `USE_I18N = True` e `USE_TZ = True`.
+- [X] 0.4.4 — Confirmar `DATABASES` apontando para `db.sqlite3`.
+- [X] 0.4.5 — Definir `LOGIN_URL`, `LOGIN_REDIRECT_URL` e `LOGOUT_REDIRECT_URL`.
 
 ---
 
