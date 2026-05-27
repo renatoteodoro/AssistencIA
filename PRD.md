@@ -663,9 +663,9 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 4.1.5 — Executar `makemigrations accounts` e `migrate`.
 
 #### Tarefa 4.2 — Forms de conta
-- [ ] 4.2.1 — Criar `accounts/forms.py`.
-- [ ] 4.2.2 — Criar `AccountForm` (ModelForm) com campos: `name`, `account_type`, `initial_balance`.
-- [ ] 4.2.3 — Aplicar classes Tailwind nos widgets do formulário.
+- [X] 4.2.1 — Criar `accounts/forms.py`.
+- [X] 4.2.2 — Criar `AccountForm` (ModelForm) com campos: `name`, `account_type`, `initial_balance`.
+- [X] 4.2.3 — Aplicar classes Tailwind nos widgets do formulário.
 
 #### Tarefa 4.3 — Views de conta
 - [ ] 4.3.1 — Criar `AccountListView` (LoginRequiredMixin + ListView) filtrando por `user=request.user`.
