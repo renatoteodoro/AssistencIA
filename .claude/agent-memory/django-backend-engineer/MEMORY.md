@@ -4,3 +4,4 @@
 - [Sprint 4.1 — Accounts Model](project-sprint4-accounts-model.md) — Account model (checking/savings/wallet choices), admin, migration 0001_initial applied
 - [Sprint 4.3/4.4 — Accounts Views & URLs](project-sprint4-accounts-views-urls.md) — 4 CBVs, accounts/urls.py, core/urls.py updated; deletion guard uses try/except for missing transactions FK
 - [Sprint 5.1/5.2 — Categories Model & Form](project-sprint5-categories.md) — Category model (income/expense), admin, CategoryForm with user kwarg pattern, migration applied
+- [Sprint 6 — Transactions App](project-sprint6-transactions.md) — Transaction model (FKs to Account+Category), form with dual queryset filter, 4 CBVs with GET filters, urls.py; migration 0001_initial applied

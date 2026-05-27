@@ -20,7 +20,13 @@ URL names confirmed from urls.py files:
 - `accounts:account_update` — path `accounts/<int:pk>/edit/`
 - `accounts:account_delete` — path `accounts/<int:pk>/delete/`
 - `categories:category_list` — namespace `categories`, app `categories`
+- `categories:category_create` — path `categories/new/`
+- `categories:category_update` — path `categories/<int:pk>/edit/`
+- `categories:category_delete` — path `categories/<int:pk>/delete/`
 - `transactions:transaction_list` — namespace `transactions`, app `transactions`
+- `transactions:transaction_create` — path `transactions/new/`
+- `transactions:transaction_update` — path `transactions/<int:pk>/edit/`
+- `transactions:transaction_delete` — path `transactions/<int:pk>/delete/`
 - `users:logout` — confirmed in use: `app.html` (layouts) uses this form, so `app_name = 'users'` is set in users/urls.py
 
 **Active state detection in sidebar:**

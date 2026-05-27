@@ -716,39 +716,39 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 
 ---
 
-### 💸 Sprint 6 — Transações
+### ✅ Sprint 6 — Transações
 
 #### Tarefa 6.1 — Model de transação (`transactions`)
-- [ ] 6.1.1 — Criar `Transaction` em `transactions/models.py` com campos: `user` (FK), `account` (FK), `category` (FK), `description`, `amount` (DecimalField), `transaction_type` (choices: `income`/`expense`), `date` (DateField).
-- [ ] 6.1.2 — Adicionar campos `created_at` e `updated_at`.
-- [ ] 6.1.3 — Registrar no `transactions/admin.py`.
-- [ ] 6.1.4 — Executar `makemigrations transactions` e `migrate`.
+- [X] 6.1.1 — Criar `Transaction` em `transactions/models.py` com campos: `user` (FK), `account` (FK), `category` (FK), `description`, `amount` (DecimalField), `transaction_type` (choices: `income`/`expense`), `date` (DateField).
+- [X] 6.1.2 — Adicionar campos `created_at` e `updated_at`.
+- [X] 6.1.3 — Registrar no `transactions/admin.py`.
+- [X] 6.1.4 — Executar `makemigrations transactions` e `migrate`.
 
 #### Tarefa 6.2 — Forms de transação
-- [ ] 6.2.1 — Criar `transactions/forms.py` com `TransactionForm` (ModelForm).
-- [ ] 6.2.2 — Sobrescrever `__init__` para filtrar queryset de `account` e `category` pelo usuário logado.
-- [ ] 6.2.3 — Incluir campos: `description`, `amount`, `transaction_type`, `date`, `account`, `category`.
-- [ ] 6.2.4 — Aplicar classes Tailwind nos widgets, incluindo `DateInput` com `type="date"`.
+- [X] 6.2.1 — Criar `transactions/forms.py` com `TransactionForm` (ModelForm).
+- [X] 6.2.2 — Sobrescrever `__init__` para filtrar queryset de `account` e `category` pelo usuário logado.
+- [X] 6.2.3 — Incluir campos: `description`, `amount`, `transaction_type`, `date`, `account`, `category`.
+- [X] 6.2.4 — Aplicar classes Tailwind nos widgets, incluindo `DateInput` com `type="date"`.
 
 #### Tarefa 6.3 — Views de transação
-- [ ] 6.3.1 — Criar `TransactionListView` com filtro por `user`, ordenado por `date` decrescente.
-- [ ] 6.3.2 — Implementar filtro por período (mês/ano) via query params GET na `TransactionListView`.
-- [ ] 6.3.3 — Implementar filtro por conta e categoria via query params GET na `TransactionListView`.
-- [ ] 6.3.4 — Criar `TransactionCreateView` atribuindo `user` no `form_valid`.
-- [ ] 6.3.5 — Criar `TransactionUpdateView` com verificação de ownership.
-- [ ] 6.3.6 — Criar `TransactionDeleteView` com confirmação e verificação de ownership.
+- [X] 6.3.1 — Criar `TransactionListView` com filtro por `user`, ordenado por `date` decrescente.
+- [X] 6.3.2 — Implementar filtro por período (mês/ano) via query params GET na `TransactionListView`.
+- [X] 6.3.3 — Implementar filtro por conta e categoria via query params GET na `TransactionListView`.
+- [X] 6.3.4 — Criar `TransactionCreateView` atribuindo `user` no `form_valid`.
+- [X] 6.3.5 — Criar `TransactionUpdateView` com verificação de ownership.
+- [X] 6.3.6 — Criar `TransactionDeleteView` com confirmação e verificação de ownership.
 
 #### Tarefa 6.4 — URLs de transação
-- [ ] 6.4.1 — Criar `transactions/urls.py` com rotas: `list/`, `new/`, `<pk>/edit/`, `<pk>/delete/`.
-- [ ] 6.4.2 — Incluir `transactions.urls` no `core/urls.py` com prefixo `transactions/`.
+- [X] 6.4.1 — Criar `transactions/urls.py` com rotas: `list/`, `new/`, `<pk>/edit/`, `<pk>/delete/`.
+- [X] 6.4.2 — Incluir `transactions.urls` no `core/urls.py` com prefixo `transactions/`.
 
 #### Tarefa 6.5 — Templates de transação
-- [ ] 6.5.1 — Criar `templates/transactions/transaction_list.html` com tabela, badges de tipo e ações.
-- [ ] 6.5.2 — Implementar formulário de filtros (período, conta, categoria) no topo da listagem.
-- [ ] 6.5.3 — Criar `templates/transactions/transaction_form.html`.
-- [ ] 6.5.4 — Criar `templates/transactions/transaction_confirm_delete.html`.
-- [ ] 6.5.5 — Aplicar badges de receita/despesa com cores do design system (emerald/red).
-- [ ] 6.5.6 — Aplicar design system em todos os templates.
+- [X] 6.5.1 — Criar `templates/transactions/transaction_list.html` com tabela, badges de tipo e ações.
+- [X] 6.5.2 — Implementar formulário de filtros (período, conta, categoria) no topo da listagem.
+- [X] 6.5.3 — Criar `templates/transactions/transaction_form.html`.
+- [X] 6.5.4 — Criar `templates/transactions/transaction_confirm_delete.html`.
+- [X] 6.5.5 — Aplicar badges de receita/despesa com cores do design system (emerald/red).
+- [X] 6.5.6 — Aplicar design system em todos os templates.
 
 ---
 

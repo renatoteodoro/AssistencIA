@@ -10,4 +10,8 @@ urlpatterns = [
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
     path('accounts/', include('accounts.urls', namespace='accounts')),
     path('categories/', include('categories.urls', namespace='categories')),
+    path(
+        'transactions/',
+        include('transactions.urls', namespace='transactions'),
+    ),
 ]
