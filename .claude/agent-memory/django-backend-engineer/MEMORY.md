@@ -1,1 +1,2 @@
 - [Sprint 1 — Users App](project-sprint1-users.md) — CustomUser (email auth), forms, views, URLs, migrations applied; superuser admin@assistencia.com created
+- [Sprint 2 — Profiles App](project-sprint2-profiles.md) — Profile model (OneToOneField), post_save signal with dispatch_uid, admin, migration applied; .flake8 config created

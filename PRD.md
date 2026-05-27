@@ -604,22 +604,22 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 
 ---
 
-### 👤 Sprint 2 — Perfil de Usuário
+### ✅ Sprint 2 — Perfil de Usuário
 
 #### Tarefa 2.1 — Model de perfil (`profiles`)
-- [ ] 2.1.1 — Criar `Profile` em `profiles/models.py` com `OneToOneField` para `settings.AUTH_USER_MODEL`.
-- [ ] 2.1.2 — Adicionar campos `created_at` e `updated_at`.
-- [ ] 2.1.3 — Registrar `Profile` no `profiles/admin.py`.
+- [X] 2.1.1 — Criar `Profile` em `profiles/models.py` com `OneToOneField` para `settings.AUTH_USER_MODEL`.
+- [X] 2.1.2 — Adicionar campos `created_at` e `updated_at`.
+- [X] 2.1.3 — Registrar `Profile` no `profiles/admin.py`.
 
 #### Tarefa 2.2 — Signal de criação automática de perfil
-- [ ] 2.2.1 — Criar `profiles/signals.py`.
-- [ ] 2.2.2 — Implementar signal `post_save` em `User` para criar `Profile` automaticamente.
-- [ ] 2.2.3 — Conectar o signal em `profiles/apps.py` via `ready()`.
+- [X] 2.2.1 — Criar `profiles/signals.py`.
+- [X] 2.2.2 — Implementar signal `post_save` em `User` para criar `Profile` automaticamente.
+- [X] 2.2.3 — Conectar o signal em `profiles/apps.py` via `ready()`.
 
 #### Tarefa 2.3 — Migrations de perfil
-- [ ] 2.3.1 — Executar `python manage.py makemigrations profiles`.
-- [ ] 2.3.2 — Executar `python manage.py migrate`.
-- [ ] 2.3.3 — Verificar no admin que o perfil é criado ao registrar um novo usuário.
+- [X] 2.3.1 — Executar `python manage.py makemigrations profiles`.
+- [X] 2.3.2 — Executar `python manage.py migrate`.
+- [X] 2.3.3 — Verificar no admin que o perfil é criado ao registrar um novo usuário.
 
 ---
 
