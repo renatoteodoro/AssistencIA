@@ -1,0 +1,1 @@
+- [Sprint 1 — Users App](project-sprint1-users.md) — CustomUser (email auth), forms, views, URLs, migrations applied; superuser admin@assistencia.com created

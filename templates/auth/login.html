@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Entrar — AssistencIA{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center px-4 py-12">
+    <div class="w-full max-w-md">
+
+        <!-- Logo / título -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold tracking-tight bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500 bg-clip-text text-transparent">
+                AssistencIA
+            </h1>
+            <p class="mt-2 text-slate-400 text-base">Acesse sua conta</p>
+        </div>
+
+        <!-- Card -->
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 shadow-lg">
+
+            <!-- Erros não-de-campo -->
+            {% if form.non_field_errors %}
+            <div class="mb-5 bg-red-900/50 border border-red-700 rounded-lg p-3">
+                {% for error in form.non_field_errors %}
+                <p class="text-red-300 text-sm">{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <form method="post" novalidate class="space-y-5">
+                {% csrf_token %}
+
+                <!-- E-mail -->
+                <div>
+                    <label for="{{ form.username.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        E-mail
+                    </label>
+                    {{ form.username }}
+                    {% if form.username.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.username.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Senha -->
+                <div>
+                    <label for="{{ form.password.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        Senha
+                    </label>
+                    {{ form.password }}
+                    {% if form.password.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.password.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Botão submit -->
+                <button type="submit"
+                        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
+                    Entrar
+                </button>
+            </form>
+
+            <!-- Link de cadastro -->
+            <p class="mt-6 text-center text-sm text-slate-400">
+                Não tem conta?
+                <a href="{% url 'register' %}"
+                   class="text-indigo-400 hover:text-indigo-300 transition-colors duration-200">
+                    Cadastre-se
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

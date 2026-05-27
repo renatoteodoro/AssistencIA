@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Criar conta — AssistencIA{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center px-4 py-12">
+    <div class="w-full max-w-md">
+
+        <!-- Logo / título -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold tracking-tight bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500 bg-clip-text text-transparent">
+                AssistencIA
+            </h1>
+            <p class="mt-2 text-slate-400 text-base">Crie sua conta</p>
+        </div>
+
+        <!-- Card -->
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 shadow-lg">
+
+            <!-- Erros não-de-campo -->
+            {% if form.non_field_errors %}
+            <div class="mb-5 bg-red-900/50 border border-red-700 rounded-lg p-3">
+                {% for error in form.non_field_errors %}
+                <p class="text-red-300 text-sm">{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <form method="post" novalidate class="space-y-5">
+                {% csrf_token %}
+
+                <!-- Nome -->
+                <div>
+                    <label for="{{ form.first_name.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        Nome
+                    </label>
+                    {{ form.first_name }}
+                    {% if form.first_name.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.first_name.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Sobrenome -->
+                <div>
+                    <label for="{{ form.last_name.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        Sobrenome
+                    </label>
+                    {{ form.last_name }}
+                    {% if form.last_name.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.last_name.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- E-mail -->
+                <div>
+                    <label for="{{ form.email.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        E-mail
+                    </label>
+                    {{ form.email }}
+                    {% if form.email.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.email.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Senha -->
+                <div>
+                    <label for="{{ form.password1.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        Senha
+                    </label>
+                    {{ form.password1 }}
+                    {% if form.password1.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.password1.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Confirmar senha -->
+                <div>
+                    <label for="{{ form.password2.id_for_label }}"
+                           class="block text-sm font-medium text-slate-300 mb-1">
+                        Confirme a senha
+                    </label>
+                    {{ form.password2 }}
+                    {% if form.password2.errors %}
+                    <p class="text-red-400 text-xs mt-1">{{ form.password2.errors.0 }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Botão submit -->
+                <button type="submit"
+                        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200">
+                    Criar conta
+                </button>
+            </form>
+
+            <!-- Link de login -->
+            <p class="mt-6 text-center text-sm text-slate-400">
+                Já tem conta?
+                <a href="{% url 'login' %}"
+                   class="text-indigo-400 hover:text-indigo-300 transition-colors duration-200">
+                    Entrar
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

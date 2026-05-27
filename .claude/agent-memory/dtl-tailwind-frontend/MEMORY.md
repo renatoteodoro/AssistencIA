@@ -1,0 +1,2 @@
+- [Project URL Names](project-url-names.md) — confirmed URL names for {% url %} tags: login, register, logout (no namespaces yet)
+- [Project Forms](project-forms.md) — LoginForm and RegisterForm field names, widget CSS is applied by the form classes

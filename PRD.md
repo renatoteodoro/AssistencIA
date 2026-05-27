@@ -564,43 +564,43 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 
 ---
 
-### 🔐 Sprint 1 — Autenticação com E-mail
+### ✅ Sprint 1 — Autenticação com E-mail
 
 #### Tarefa 1.1 — Model de usuário customizado (`users`)
-- [ ] 1.1.1 — Criar `CustomUser` em `users/models.py` herdando de `AbstractUser`.
-- [ ] 1.1.2 — Definir `username = None` para remover o campo username.
-- [ ] 1.1.3 — Definir `email` como `unique=True` e campo obrigatório.
-- [ ] 1.1.4 — Definir `USERNAME_FIELD = 'email'` e `REQUIRED_FIELDS = ['first_name', 'last_name']`.
-- [ ] 1.1.5 — Criar `CustomUserManager` sobrescrevendo `create_user` e `create_superuser`.
-- [ ] 1.1.6 — Adicionar campos `created_at` e `updated_at` ao model.
-- [ ] 1.1.7 — Definir `AUTH_USER_MODEL = 'users.CustomUser'` em `settings.py`.
-- [ ] 1.1.8 — Registrar `CustomUser` no `users/admin.py` com `UserAdmin` adaptado.
+- [X] 1.1.1 — Criar `CustomUser` em `users/models.py` herdando de `AbstractUser`.
+- [X] 1.1.2 — Definir `username = None` para remover o campo username.
+- [X] 1.1.3 — Definir `email` como `unique=True` e campo obrigatório.
+- [X] 1.1.4 — Definir `USERNAME_FIELD = 'email'` e `REQUIRED_FIELDS = ['first_name', 'last_name']`.
+- [X] 1.1.5 — Criar `CustomUserManager` sobrescrevendo `create_user` e `create_superuser`.
+- [X] 1.1.6 — Adicionar campos `created_at` e `updated_at` ao model.
+- [X] 1.1.7 — Definir `AUTH_USER_MODEL = 'users.CustomUser'` em `settings.py`.
+- [X] 1.1.8 — Registrar `CustomUser` no `users/admin.py` com `UserAdmin` adaptado.
 
 #### Tarefa 1.2 — Migrations iniciais
-- [ ] 1.2.1 — Executar `python manage.py makemigrations users`.
-- [ ] 1.2.2 — Executar `python manage.py migrate`.
-- [ ] 1.2.3 — Criar superusuário de teste com `python manage.py createsuperuser`.
+- [X] 1.2.1 — Executar `python manage.py makemigrations users`.
+- [X] 1.2.2 — Executar `python manage.py migrate`.
+- [X] 1.2.3 — Criar superusuário de teste com `python manage.py createsuperuser`.
 
 #### Tarefa 1.3 — Formulários de autenticação (`users`)
-- [ ] 1.3.1 — Criar `users/forms.py`.
-- [ ] 1.3.2 — Criar `RegisterForm` herdando de `UserCreationForm` com campos: `first_name`, `last_name`, `email`, `password1`, `password2`.
-- [ ] 1.3.3 — Criar `LoginForm` herdando de `AuthenticationForm` com campo `email` no lugar de `username`.
+- [X] 1.3.1 — Criar `users/forms.py`.
+- [X] 1.3.2 — Criar `RegisterForm` herdando de `UserCreationForm` com campos: `first_name`, `last_name`, `email`, `password1`, `password2`.
+- [X] 1.3.3 — Criar `LoginForm` herdando de `AuthenticationForm` com campo `email` no lugar de `username`.
 
 #### Tarefa 1.4 — Views de autenticação (`users`)
-- [ ] 1.4.1 — Criar `RegisterView` (CreateView ou View) em `users/views.py`.
-- [ ] 1.4.2 — Criar `CustomLoginView` herdando de `LoginView` do Django, apontando para `LoginForm`.
-- [ ] 1.4.3 — Configurar `CustomLogoutView` ou usar a view padrão do Django.
+- [X] 1.4.1 — Criar `RegisterView` (CreateView ou View) em `users/views.py`.
+- [X] 1.4.2 — Criar `CustomLoginView` herdando de `LoginView` do Django, apontando para `LoginForm`.
+- [X] 1.4.3 — Configurar `CustomLogoutView` ou usar a view padrão do Django.
 
 #### Tarefa 1.5 — URLs de autenticação
-- [ ] 1.5.1 — Criar `users/urls.py` com rotas: `register/`, `login/`, `logout/`.
-- [ ] 1.5.2 — Incluir `users.urls` no `core/urls.py`.
+- [X] 1.5.1 — Criar `users/urls.py` com rotas: `register/`, `login/`, `logout/`.
+- [X] 1.5.2 — Incluir `users.urls` no `core/urls.py`.
 
 #### Tarefa 1.6 — Templates de autenticação
-- [ ] 1.6.1 — Criar `templates/base.html` com estrutura HTML base, link Tailwind, bloco `content`.
-- [ ] 1.6.2 — Criar `templates/auth/login.html` estendendo `base.html`, com formulário de login.
-- [ ] 1.6.3 — Criar `templates/auth/register.html` estendendo `base.html`, com formulário de registro.
-- [ ] 1.6.4 — Aplicar design system (fundo escuro, card centralizado, inputs e botões padronizados).
-- [ ] 1.6.5 — Testar fluxo completo: registro → login → logout.
+- [X] 1.6.1 — Criar `templates/base.html` com estrutura HTML base, link Tailwind, bloco `content`.
+- [X] 1.6.2 — Criar `templates/auth/login.html` estendendo `base.html`, com formulário de login.
+- [X] 1.6.3 — Criar `templates/auth/register.html` estendendo `base.html`, com formulário de registro.
+- [X] 1.6.4 — Aplicar design system (fundo escuro, card centralizado, inputs e botões padronizados).
+- [X] 1.6.5 — Testar fluxo completo: registro → login → logout.
 
 ---
 

@@ -1,0 +1,1 @@
+- [Sprint 1 Auth QA Findings](project_sprint1_auth_findings.md) — known login error double-space bug, error element CSS patterns, confirmed design system compliance, test account qa@teste.com
