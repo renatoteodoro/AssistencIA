@@ -537,8 +537,8 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 0.1.4 — Criar o projeto Django com `django-admin startproject core .` dentro de `AssistencIA/`.
 - [X] 0.1.5 — Renomear o diretório de configurações para `core/` caso necessário, ajustar `manage.py` e `wsgi/asgi`.
 - [X] 0.1.6 — Criar o arquivo `requirements.txt` com `pip freeze > requirements.txt`.
-- [ ] 0.1.7 — Inicializar repositório Git (`git init`, `.gitignore` para Python/Django).
-- [ ] 0.1.8 — Realizar o primeiro commit com a estrutura base.
+- [X] 0.1.7 — Inicializar repositório Git (`git init`, `.gitignore` para Python/Django).
+- [X] 0.1.8 — Realizar o primeiro commit com a estrutura base.
 
 #### Tarefa 0.2 — Criação das apps Django
 - [X] 0.2.1 — Criar a app `users` com `python manage.py startapp users`.
@@ -549,11 +549,11 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 0.2.6 — Registrar todas as apps em `core/settings.py` dentro de `INSTALLED_APPS`.
 
 #### Tarefa 0.3 — Configuração do TailwindCSS
-- [ ] 0.3.1 — Adicionar link do TailwindCSS CDN Play no template base (abordagem inicial sem build).
-- [ ] 0.3.2 — Criar o diretório `templates/` na raiz do projeto.
-- [ ] 0.3.3 — Configurar `TEMPLATES[0]['DIRS']` em `settings.py` para apontar para `templates/`.
-- [ ] 0.3.4 — Criar o diretório `static/` na raiz.
-- [ ] 0.3.5 — Configurar `STATICFILES_DIRS` em `settings.py`.
+- [X] 0.3.1 — Adicionar link do TailwindCSS CDN Play no template base (abordagem inicial sem build).
+- [X] 0.3.2 — Criar o diretório `templates/` na raiz do projeto.
+- [X] 0.3.3 — Configurar `TEMPLATES[0]['DIRS']` em `settings.py` para apontar para `templates/`.
+- [X] 0.3.4 — Criar o diretório `static/` na raiz.
+- [X] 0.3.5 — Configurar `STATICFILES_DIRS` em `settings.py`.
 
 #### Tarefa 0.4 — Configuração global do settings.py
 - [ ] 0.4.1 — Definir `LANGUAGE_CODE = 'pt-br'`.
