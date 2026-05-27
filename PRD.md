@@ -634,11 +634,11 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 3.1.6 — Configurar rota `''` (home) em `core/urls.py` apontando para `HomeView`.
 
 #### Tarefa 3.2 — Layout autenticado base
-- [ ] 3.2.1 — Criar `templates/layouts/app.html` com sidebar lateral e área de conteúdo.
-- [ ] 3.2.2 — Implementar sidebar com links para: Dashboard, Contas, Categorias, Transações.
-- [ ] 3.2.3 — Adicionar botão de logout na sidebar.
-- [ ] 3.2.4 — Destacar visualmente o link ativo com classe condicional via DTL.
-- [ ] 3.2.5 — Aplicar design system ao layout (cores slate, bordas, tipografia).
+- [X] 3.2.1 — Criar `templates/layouts/app.html` com sidebar lateral e área de conteúdo.
+- [X] 3.2.2 — Implementar sidebar com links para: Dashboard, Contas, Categorias, Transações.
+- [X] 3.2.3 — Adicionar botão de logout na sidebar.
+- [X] 3.2.4 — Destacar visualmente o link ativo com classe condicional via DTL.
+- [X] 3.2.5 — Aplicar design system ao layout (cores slate, bordas, tipografia).
 
 #### Tarefa 3.3 — Dashboard (`core`)
 - [ ] 3.3.1 — Criar `DashboardView` (LoginRequiredMixin + TemplateView) em `core/views.py`.
