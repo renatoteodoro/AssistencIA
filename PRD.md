@@ -689,14 +689,14 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 ### 🏷️ Sprint 5 — Categorias
 
 #### Tarefa 5.1 — Model de categoria (`categories`)
-- [ ] 5.1.1 — Criar `Category` em `categories/models.py` com campos: `user` (FK), `name`, `category_type` (choices: `income`/`expense`).
-- [ ] 5.1.2 — Adicionar campos `created_at` e `updated_at`.
-- [ ] 5.1.3 — Registrar no `categories/admin.py`.
-- [ ] 5.1.4 — Executar `makemigrations categories` e `migrate`.
+- [X] 5.1.1 — Criar `Category` em `categories/models.py` com campos: `user` (FK), `name`, `category_type` (choices: `income`/`expense`).
+- [X] 5.1.2 — Adicionar campos `created_at` e `updated_at`.
+- [X] 5.1.3 — Registrar no `categories/admin.py`.
+- [X] 5.1.4 — Executar `makemigrations categories` e `migrate`.
 
 #### Tarefa 5.2 — Forms de categoria
-- [ ] 5.2.1 — Criar `categories/forms.py` com `CategoryForm` (ModelForm): campos `name`, `category_type`.
-- [ ] 5.2.2 — Aplicar classes Tailwind nos widgets.
+- [X] 5.2.1 — Criar `categories/forms.py` com `CategoryForm` (ModelForm): campos `name`, `category_type`.
+- [X] 5.2.2 — Aplicar classes Tailwind nos widgets.
 
 #### Tarefa 5.3 — Views de categoria
 - [ ] 5.3.1 — Criar `CategoryListView` filtrando por `user=request.user`.
