@@ -686,7 +686,7 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 
 ---
 
-### 🏷️ Sprint 5 — Categorias
+### ✅ Sprint 5 — Categorias
 
 #### Tarefa 5.1 — Model de categoria (`categories`)
 - [X] 5.1.1 — Criar `Category` em `categories/models.py` com campos: `user` (FK), `name`, `category_type` (choices: `income`/`expense`).
@@ -699,20 +699,20 @@ bg-gradient-to-br from-indigo-500 via-purple-600 to-cyan-500
 - [X] 5.2.2 — Aplicar classes Tailwind nos widgets.
 
 #### Tarefa 5.3 — Views de categoria
-- [ ] 5.3.1 — Criar `CategoryListView` filtrando por `user=request.user`.
-- [ ] 5.3.2 — Criar `CategoryCreateView` atribuindo `user` no `form_valid`.
-- [ ] 5.3.3 — Criar `CategoryUpdateView` com verificação de ownership.
-- [ ] 5.3.4 — Criar `CategoryDeleteView` com verificação de transações vinculadas e ownership.
+- [X] 5.3.1 — Criar `CategoryListView` filtrando por `user=request.user`.
+- [X] 5.3.2 — Criar `CategoryCreateView` atribuindo `user` no `form_valid`.
+- [X] 5.3.3 — Criar `CategoryUpdateView` com verificação de ownership.
+- [X] 5.3.4 — Criar `CategoryDeleteView` com verificação de transações vinculadas e ownership.
 
 #### Tarefa 5.4 — URLs de categoria
-- [ ] 5.4.1 — Criar `categories/urls.py` com rotas: `list/`, `new/`, `<pk>/edit/`, `<pk>/delete/`.
-- [ ] 5.4.2 — Incluir `categories.urls` no `core/urls.py` com prefixo `categories/`.
+- [X] 5.4.1 — Criar `categories/urls.py` com rotas: `list/`, `new/`, `<pk>/edit/`, `<pk>/delete/`.
+- [X] 5.4.2 — Incluir `categories.urls` no `core/urls.py` com prefixo `categories/`.
 
 #### Tarefa 5.5 — Templates de categoria
-- [ ] 5.5.1 — Criar `templates/categories/category_list.html` com listagem e ações.
-- [ ] 5.5.2 — Criar `templates/categories/category_form.html`.
-- [ ] 5.5.3 — Criar `templates/categories/category_confirm_delete.html`.
-- [ ] 5.5.4 — Aplicar design system em todos os templates.
+- [X] 5.5.1 — Criar `templates/categories/category_list.html` com listagem e ações.
+- [X] 5.5.2 — Criar `templates/categories/category_form.html`.
+- [X] 5.5.3 — Criar `templates/categories/category_confirm_delete.html`.
+- [X] 5.5.4 — Aplicar design system em todos os templates.
 
 ---
 

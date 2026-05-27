@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'profiles',
     'transactions',
     'users',
+    'tailwind',
+    'theme',
 
 ]
 
@@ -135,3 +137,4 @@ AUTH_USER_MODEL = 'users.CustomUser'
 LOGIN_URL = '/users/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGOUT_REDIRECT_URL = '/'
+TAILWIND_APP_NAME = 'theme'

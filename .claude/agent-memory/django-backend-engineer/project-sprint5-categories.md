@@ -1,6 +1,6 @@
 ---
 name: project-sprint5-categories
-description: Sprint 5.1/5.2 — Category model, admin, form, and migration for the categories app
+description: Sprint 5 — Category model, admin, form, views, and URLs for the categories app (tasks 5.1–5.4 complete)
 metadata:
   type: project
 ---
@@ -11,6 +11,6 @@ CategoryForm pops 'user' from kwargs (same pattern as AccountForm) even though c
 
 Migration: categories/migrations/0001_initial.py — applied cleanly.
 
-Flake8 note: categories/tests.py and categories/views.py have pre-existing Django boilerplate unused imports — not introduced by this sprint, not fixed here (out of scope).
+Tasks 5.3/5.4: 4 CBVs in categories/views.py (List, Create, Update, Delete), all with LoginRequiredMixin. Create and Update override get_form_kwargs() to pass user=self.request.user to CategoryForm. Delete guards against linked transactions via category.transactions.exists() with try/except AttributeError (same pattern as AccountDeleteView). categories/urls.py created with app_name='categories'. core/urls.py updated with path('categories/', include('categories.urls', namespace='categories')).
 
-Related: [[project-sprint4-accounts-model]]
+Related: [[project-sprint4-accounts-views-urls]]
